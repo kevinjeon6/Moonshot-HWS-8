@@ -10,8 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
        
-        Text("This is project Moonshot!!")
-            .font(.title)
+        GeometryReader { geo in
+            Image("ghost")
+                //Resizeable tells SwiftUI to make the image scalable and stretchable within the frame
+                .resizable()
+                .scaledToFill()
+                .frame(width: geo.size.width * 0.8, height: 350)
+            //geo.size.width * 0.8 means you want to take up 80% of our available screen width
+                .frame(width: geo.size.width, height: geo.size.height)
+            //Add a second frame if you want to center a view inside a GeometryReader
+        }
+       
     }
 }
 
@@ -20,3 +29,13 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+/*
+ scaledToFit means the entire image will fit inside the container even if that means leaving some parts of the view empy
+ 
+ 
+ scaledToFill means the view willl have no empty parts even if that means some of our image lies outside the container
+ 
+ geo.size.width
+ */
