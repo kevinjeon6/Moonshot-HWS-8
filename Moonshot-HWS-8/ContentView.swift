@@ -7,25 +7,36 @@
 
 import SwiftUI
 
+struct User: Codable {
+    let name: String
+    let address: Address
+}
+
+struct Address: Codable {
+    let street: String
+    let city: String
+}
+
 struct ContentView: View {
     var body: some View {
        
-        NavigationView {
+        Button("Decode JSON") {
+            let input = """
+ {
+"name": "Taylor Swift",
+"address": {
+    "street": "555, Taylor Swift Avenue",
+    "city": "Nashville"
+        }
+    }
+"""
+            //Can convert the JSON into a Data type.
             
-            List(0..<100) {
-                row in
-                NavigationLink {
-                    Text("Detail \(row + 1)")
-                } label: {
-                    
-                    Text("Row \(row + 1)")
-                        .padding()
-                        
-                }
-                .navigationTitle("SwiftUI")
-
+            let data = Data(input.utf8)
+            
+            if let user = try? JSONDecoder().decode(User.self, from: data) {
+                print(user.address.street)
             }
-           
         }
        
     }
@@ -45,4 +56,8 @@ struct ContentView_Previews: PreviewProvider {
  scaledToFill means the view willl have no empty parts even if that means some of our image lies outside the container
  
  geo.size.width
+
+ If you want to decode this kind of hierarchical data, the key is to create separate types for each level you have. The data must match the hierarchy you are requesting and Codable will do the work for us.
+
+
  */
