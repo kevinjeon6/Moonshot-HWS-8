@@ -7,40 +7,22 @@
 
 import SwiftUI
 
-struct User: Codable {
-    let name: String
-    let address: Address
-}
 
-struct Address: Codable {
-    let street: String
-    let city: String
-}
 
 struct ContentView: View {
+    
+    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
+
+    let missions: [Mission] = Bundle.main.decode("missions.json")
+    
     var body: some View {
-       
-        Button("Decode JSON") {
-            let input = """
- {
-"name": "Taylor Swift",
-"address": {
-    "street": "555, Taylor Swift Avenue",
-    "city": "Nashville"
-        }
-    }
-"""
-            //Can convert the JSON into a Data type.
-            
-            let data = Data(input.utf8)
-            
-            if let user = try? JSONDecoder().decode(User.self, from: data) {
-                print(user.address.street)
-            }
-        }
-       
+        
+        Text("\(astronauts.count)")
+        
     }
 }
+       
+    
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
