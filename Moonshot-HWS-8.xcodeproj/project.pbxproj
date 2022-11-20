@@ -16,6 +16,7 @@
 		74B90BC829231B6900AA6C3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B90BC729231B6900AA6C3D /* ContentView.swift */; };
 		74B90BCA29231B7000AA6C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B90BC929231B7000AA6C3D /* Assets.xcassets */; };
 		74B90BCD29231B7000AA6C3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B90BCC29231B7000AA6C3D /* Preview Assets.xcassets */; };
+		74CBF7F6292AE95500BE2111 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CBF7F5292AE95500BE2111 /* Color-Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		74B90BC729231B6900AA6C3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74B90BC929231B7000AA6C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B90BCC29231B7000AA6C3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74CBF7F5292AE95500BE2111 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				7430EAA72929899000D2156C /* Bundle-Decodable.swift */,
+				74CBF7F5292AE95500BE2111 /* Color-Theme.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7430EAA52929889300D2156C /* Astronaut.swift in Sources */,
+				74CBF7F6292AE95500BE2111 /* Color-Theme.swift in Sources */,
 				74B90BC829231B6900AA6C3D /* ContentView.swift in Sources */,
 				74B90BC629231B6900AA6C3D /* Moonshot_HWS_8App.swift in Sources */,
 				7430EAAA292996A300D2156C /* Mission.swift in Sources */,

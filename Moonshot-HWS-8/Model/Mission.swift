@@ -33,7 +33,7 @@ struct Mission: Codable, Identifiable {
     //Launch data is optional since one mission does not have a launch date so it may or may not be there
     
     let id: Int
-    let launchData: String?
+    let launchDate: Date?
     let crew: [Crew]
     let description: String
     
@@ -43,6 +43,23 @@ struct Mission: Codable, Identifiable {
         let name: String
         let role: String
     }
+    
+    
+    
+    //Computed properties
+    var displayName: String {
+        "Apollo \(id)"
+    }
+    
+    var image: String {
+        "apollo\(id)"
+    }
+    
+    var formattedLaunchDate: String {
+        launchDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
+    }
+    
+    
 }
 
 
