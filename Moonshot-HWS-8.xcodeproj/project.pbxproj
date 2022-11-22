@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74289B58292D70E900F766D9 /* AstronautDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74289B57292D70E900F766D9 /* AstronautDetailView.swift */; };
 		7430EAA0292987BF00D2156C /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 7430EA9F292987BF00D2156C /* astronauts.json */; };
 		7430EAA2292987C500D2156C /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 7430EAA1292987C500D2156C /* missions.json */; };
 		7430EAA52929889300D2156C /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430EAA42929889300D2156C /* Astronaut.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74289B57292D70E900F766D9 /* AstronautDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautDetailView.swift; sourceTree = "<group>"; };
 		7430EA9F292987BF00D2156C /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		7430EAA1292987C500D2156C /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		7430EAA42929889300D2156C /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				74B90BC729231B6900AA6C3D /* ContentView.swift */,
 				744AFEBF292C3EDD005B4154 /* MissionView.swift */,
+				74289B57292D70E900F766D9 /* AstronautDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				744AFEC0292C3EDD005B4154 /* MissionView.swift in Sources */,
 				7430EAA52929889300D2156C /* Astronaut.swift in Sources */,
 				74CBF7F6292AE95500BE2111 /* Color-Theme.swift in Sources */,
+				74289B58292D70E900F766D9 /* AstronautDetailView.swift in Sources */,
 				74B90BC829231B6900AA6C3D /* ContentView.swift in Sources */,
 				74B90BC629231B6900AA6C3D /* Moonshot_HWS_8App.swift in Sources */,
 				7430EAAA292996A300D2156C /* Mission.swift in Sources */,
